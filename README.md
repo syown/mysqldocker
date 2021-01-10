@@ -5,4 +5,4 @@
 - docker-compose build
 - docker-compose up -d
 
-# mysql/data　にデータ保存される。
+# mysql/data　にデータ保存される
