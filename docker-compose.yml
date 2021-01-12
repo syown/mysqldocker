@@ -3,8 +3,12 @@ services:
   mysql:
     build: ./mysql/    #Dockerfileからビルドすることを示す。
     volumes:
-      - ./mysql/data:/var/lib/mysql
+      - MysqlDB:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root   #環境変数
     ports:
       - 3306:3306
+volumes:
+  MysqlDB:
+    name: MysqlDB
+    driver: local
